@@ -1,0 +1,239 @@
+/* Reset */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* estilos generales */
+
+body{
+    background-image:url(../img/fondo-celeste-png.avif);
+}
+
+.titulos{
+    text-align: center;
+    border: solid 2px;
+    background-color: rgb(248, 229, 187);
+}
+
+/* estilos header */
+
+header{
+    display: flex;
+    background-color: rgb(248, 229, 187);
+    align-items: center;
+    border: solid 2px;
+    justify-content: space-between;
+    padding-inline-start: 5px;
+    width: 100%;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li{
+   margin: 10px;
+   padding: 10px;
+   text-decoration: none;
+   border: solid 2px black;
+}
+
+header nav ul li a{
+    text-decoration: none;
+}
+
+/* estilos main */
+
+/* estilos home */
+
+.indumentaria-home{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   justify-items: center;
+    padding: 20px;
+}
+
+/* estilos tienda */
+
+.indumentaria-tienda{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    gap: 40px ;
+    padding: 20px;
+}
+
+/* estilos contacto */
+
+/* redes sociales */
+
+.RedesSociales{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    gap: 10rem;
+    padding: 10px;
+}
+
+/* formulario */
+
+#formulario{
+    margin: 10px;
+    padding: 30px;
+    display: flex;
+}
+
+form fieldset{
+    background-color: rgba(247, 160, 160, 0.918);
+    border-radius: 20px;
+    width: 100%;
+}
+
+#nombre{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    width: 30%;
+    height: 30px;
+}
+
+#apellido{
+    margin-bottom: 50px;
+    margin-right: 35px;
+    width: 30%;
+    height: 30px;
+}
+
+#email{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    width: 30%;
+    height: 30px;
+}
+
+#texto{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    width: 80%;
+    height: 80px;
+}
+
+/* estilos preguntas frecuentes */
+
+/* estilos generales */
+
+.preguntas-frecuentes{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    gap: 20px;
+}
+
+/* estilo preguntas */
+
+.preguntas{
+font-size: 30px;
+}
+
+/* estilo respuestas */
+
+.respuestas{
+    font-size: 15px;
+}
+
+/* estilos de ubicacion */
+
+/* estilos de los mapas */
+
+.ubicaciones{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding: 10px;
+}
+
+.ubicacion{
+    display: flex;
+    justify-content: center;
+    font-size: 3em;
+}
+
+/* estilos footer */
+
+/* footer general */
+
+footer{
+    background-color: rgb(248, 229, 187);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+    position: absolute;
+    border: solid 2px;
+    width: 100%;
+}
+
+/* estilos del copyright*/
+
+.copyright{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 5px;
+}
+
+/* estilos de redes */
+
+.redes{
+    display: flex;
+    gap: 15px;
+    margin: 10px;
+    padding-right: 5px;
+}
+
+/* estilos de flecha*/
+
+.flecha{
+    position: fixed;
+    bottom: 10px;
+}
+
+/* estilos para celular */
+
+/* mq de celular */
+
+@media screen and (max-width:600px){
+
+    /* mq home */
+
+    .indumentaria-home{
+        grid-template-columns: 1fr;
+        row-gap: 3em;
+    }
+
+    /* mq tienda */
+
+    .indumentaria-tienda{
+        grid-template-columns: 2fr;
+    }
+
+    .ropamujer4, .ropamujer5, .ropamujer6{
+        display: none;
+    }
+
+    .ropahombre4, .ropahombre5, .ropahombre6{
+        display: none;
+    }
+}
